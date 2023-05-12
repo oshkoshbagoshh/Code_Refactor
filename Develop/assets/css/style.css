@@ -35,7 +35,6 @@ This changes the "seo" text color" */
     color: #d9dcd6;
 }
 
-/* TODO: need to adjust this so that it correctly flows with the page */
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -106,14 +105,18 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
-}
-
-.benefit-lead {
+    /* instead of having redundant classes below, I will add the margin-bottom: 32px and 
+    color here, since the benefits class is the parent */
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
+/* .benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+} */
+
+/* .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -121,7 +124,7 @@ p {
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
-}
+} */
 
 .benefit-lead h3 {
     margin-bottom: 10px;
@@ -183,6 +186,7 @@ p {
     color: #ffffff;
 }
 
+/* This is redundant code, so I will comment it out */
 .search-engine-optimization img {
     max-height: 200px;
 }
@@ -225,12 +229,18 @@ p {
 
 /* INSERT MEDIA QUERIES HERE: */
 
+/* I have added these media queries to fit the iphone  */
+
 @media screen and (max-width: 768px) {
     body {
       font-size: 16px;
-    }
+      flex-wrap: wrap;
+        }
     .nav {
       display: none;
+      flex-wrap: wrap;
+      /* color: red; */
     }
   }
+  
   
