@@ -1,5 +1,0 @@
-The first thing I noticed is that within the header, the nav elements are out place.
-
-The second thing I noticed is that the text falls out of place when I changed the size and screen resolution
-
-I will first add media queries at the bottom of the CSS file.
